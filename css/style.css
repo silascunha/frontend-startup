@@ -1,3 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;900&display=swap');
+
 * {
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;;
+}
+
+li, a {
+    text-decoration: none;
+    list-style-type: none;
+    color: inherit;
+}
+
+.top {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    font-size: 15px;
+}
+
+.top-bar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home-btn {
+    letter-spacing: 4px;
+}
+
+.top-menu {
+    display: flex;
+}
+
+.top-btn {
+    text-transform: uppercase;
+    padding: 20px 15px;
+}
+
+.top-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+header {
+    height: 100%;
+    background-color: #171B1F;
+    background-image: url(../img/fundo-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.header-content {
+    padding: 40px;
+}
+
+.header-titulo {
+    font-size: 4em;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+header p {
+    margin-bottom: 60px;
+    font-size: 1.2em;
+}
+
+.header-btn {
+    color: black;
+    padding: 20px;
+    background-color: rgba(253, 253, 253, 0.637);
+    font-size: 1.1em;
+    letter-spacing: 1px;
 }
