@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +11,30 @@ body, html {
     font-size: 15px;
     line-height: 1.5;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e7e7e7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #171B1F;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #21262c;
+}
+
+/* configurações de texto gerais */
 
 li, a {
     text-decoration: none;
@@ -27,6 +50,8 @@ h3 {
     font-size: 24px;
     margin: 15px 0;
 }
+
+/* barra de navegação */
 
 .top {
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
@@ -69,8 +94,11 @@ nav {
     display: none;
 }
 
+/* header */
+
 header {
     height: 100%;
+    min-height: 400px;
     background-color: #171B1F;
     background-image: url(../img/fundo-header.jpg);
     background-size: cover;
@@ -104,8 +132,11 @@ header p {
 }
 
 .header-btn:hover {
-    background-color: rgba(253, 253, 253, 0.8);;
+    background-color: rgba(253, 253, 253, 0.9);
+    ;
 }
+
+/* Área SOBRE NÓS */
 
 .container-sobre {
     padding: 128px 16px;
@@ -143,6 +174,8 @@ header p {
     margin: 10px 0px;
 }
 
+/* media queries */
+
 @media only screen and (max-width: 800px) {
     .grid-4col {
         grid-template-columns: repeat(2, 50%);
@@ -153,24 +186,25 @@ header p {
     .top-menu {
         display: none;
     }
-
     .header-titulo {
         font-size: 2em;
     }
-
     .header-btn {
         padding: 15px;
         background-color: rgba(253, 253, 253, 0.637);
         font-size: 1em;
         letter-spacing: 1px;
     }
-
     .burguer-btn {
         padding: 14px 16px;
         display: inline;
         font-size: 24px;
         cursor: pointer;
         line-height: 0;
+    }
+
+    nav::-webkit-scrollbar {
+        display: none;
     }
 
     nav {
@@ -181,9 +215,11 @@ header p {
         position: fixed;
         z-index: 3;
         color: white;
-        transition: transform 0.3s ease-out,
-                    box-shadow 0.3s ease-out;
+        transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
         left: -300px;
+        overflow-y: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none; 
     }
 
     .fundo-navopen {
@@ -200,6 +236,10 @@ header p {
         display: none;
     }
 
+    .noscroll {
+        overflow: hidden;
+    }
+
     .navbar-close {
         font-size: 20px;
         padding: 20px;
@@ -210,7 +250,6 @@ header p {
         align-items: center;
         border-bottom: 1px solid rgba(200, 200, 200, 0.3);
     }
-
     .navbar-close:hover {
         background-color: white;
         color: black;

@@ -1,5 +1,6 @@
 const navbar = document.getElementById('navbar');
 const fundoNavbar = document.getElementById('fundo-navopen');
+const body = document.body;
 
 const navbarButtons = document.querySelectorAll('.navbar-menu a');
 const btnMenu = document.getElementById('btn-abrirmenu');
@@ -11,6 +12,7 @@ const abrirFecharMenu = () => {
     if (navbar.classList.contains('ativo')) {
         navbar.classList.remove('ativo');
         fundoNavbar.classList.remove('ativo');
+        body.classList.remove('noscroll');
     }
     else {
         navbar.classList.add('ativo');
@@ -18,7 +20,7 @@ const abrirFecharMenu = () => {
         setTimeout(function() {
             fundoNavbar.classList.add('ativo');
         }, 50);
-        
+        body.classList.add('noscroll');
     }
 }
 
@@ -35,3 +37,4 @@ navbarButtons.forEach(element => {
 
 btnMenu.onclick = abrirFecharMenu;
 btnFecharMenu.onclick = abrirFecharMenu;
+fundoNavbar.onclick = abrirFecharMenu;
