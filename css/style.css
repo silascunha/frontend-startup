@@ -9,12 +9,23 @@
 body, html {
     height: 100%;
     font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 li, a {
     text-decoration: none;
     list-style-type: none;
     color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 15px 0;
 }
 
 .top {
@@ -24,7 +35,6 @@ li, a {
     z-index: 1;
     width: 100%;
     background-color: white;
-    font-size: 15px;
 }
 
 .top-bar {
@@ -77,7 +87,6 @@ header {
 
 .header-titulo {
     font-size: 4em;
-    font-weight: 400;
     margin-bottom: 55px;
 }
 
@@ -96,6 +105,48 @@ header p {
 
 .header-btn:hover {
     background-color: rgba(253, 253, 253, 0.8);;
+}
+
+.container-sobre {
+    padding: 128px 16px;
+}
+
+.container-sobre .subtitulo {
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.icones {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.grid-4col {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.box-conteudo {
+    padding: 0 12px;
+}
+
+.box-conteudo p {
+    margin: 1.2em 0;
+}
+
+.box-titulo {
+    font-size: 1.3em;
+    margin: 10px 0px;
+}
+
+@media only screen and (max-width: 800px) {
+    .grid-4col {
+        grid-template-columns: repeat(2, 50%);
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -188,4 +239,7 @@ header p {
         background-color: rgba(0, 0, 0, 0.8);
     }
 
+    .grid-4col {
+        grid-template-columns: repeat(1, 100%);
+    }
 }
