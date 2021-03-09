@@ -166,10 +166,11 @@ header p {
     }
 
     .burguer-btn {
-        padding: 14px 16px;
+        padding: 18px 16px;
         display: inline;
-        font-size: 25px;
+        font-size: 26px;
         cursor: pointer;
+        line-height: 0;
     }
 
     nav {
