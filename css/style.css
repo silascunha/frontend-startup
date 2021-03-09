@@ -47,8 +47,12 @@ li, a {
     padding: 20px 15px;
 }
 
-.top-btn:hover {
+.top-btn:hover, .burguer-btn:hover {
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+.burguer-btn {
+    display: none;
 }
 
 header {
@@ -81,7 +85,36 @@ header p {
 .header-btn {
     color: black;
     padding: 20px;
-    background-color: rgba(253, 253, 253, 0.637);
+    background-color: rgba(253, 253, 253, 0.7);
     font-size: 1.1em;
     letter-spacing: 1px;
+}
+
+.header-btn:hover {
+    background-color: rgba(253, 253, 253, 0.8);;
+}
+
+@media only screen and (max-width: 650px) {
+    .top-menu {
+        display: none;
+    }
+
+    .header-titulo {
+        font-size: 2em;
+    }
+
+    .header-btn {
+        padding: 15px;
+        background-color: rgba(253, 253, 253, 0.637);
+        font-size: 1em;
+        letter-spacing: 1px;
+    }
+
+    .burguer-btn {
+        padding: 14px 16px;
+        display: inline;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
 }
