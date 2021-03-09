@@ -117,4 +117,69 @@ header p {
         cursor: pointer;
     }
 
+    nav {
+        height: 100%;
+        width: 300px;
+        background-color: #171B1F;
+        position: fixed;
+        z-index: 3;
+        color: white;
+        transition: transform 0.3s ease-out;
+        left: -300px;
+    }
+
+    .fundo-navopen {
+        position: fixed;
+        display: block;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        transition: background 0.4s ease-out;
+    }
+
+    .oculto {
+        display: none;
+    }
+
+    .navbar-close {
+        font-size: 20px;
+        padding: 20px;
+        line-height: 0;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(200, 200, 200, 0.3);
+    }
+
+    .navbar-close:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .navbar-close span {
+        font-size: 1.2rem;
+    }
+
+    .navbar-menu a {
+        display: block;
+        padding: 15px 20px;
+        text-transform: uppercase;
+    }
+
+    .navbar-menu a:hover {
+        background-color: white;
+        color: #171B1F;
+    }
+
+    nav.ativo {
+        display: block;
+        transform: translateX(300px);
+    }
+
+    .fundo-navopen.ativo {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
 }
