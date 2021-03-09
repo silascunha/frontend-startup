@@ -129,7 +129,8 @@ header p {
         position: fixed;
         z-index: 3;
         color: white;
-        transition: transform 0.3s ease-out;
+        transition: transform 0.3s ease-out,
+                    box-shadow 0.3s ease-out;
         left: -300px;
     }
 
@@ -180,6 +181,7 @@ header p {
 
     nav.ativo {
         transform: translateX(300px);
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.7);
     }
 
     .fundo-navopen.ativo {
