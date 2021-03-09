@@ -54,7 +54,7 @@ h3 {
 
 .top-btn {
     text-transform: uppercase;
-    padding: 20px 15px;
+    padding: 15px 12px;
 }
 
 .top-btn:hover, .burguer-btn:hover {
@@ -166,9 +166,9 @@ header p {
     }
 
     .burguer-btn {
-        padding: 18px 16px;
+        padding: 14px 16px;
         display: inline;
-        font-size: 26px;
+        font-size: 24px;
         cursor: pointer;
         line-height: 0;
     }
