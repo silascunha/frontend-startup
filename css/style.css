@@ -8,7 +8,7 @@
 
 body, html {
     height: 100%;
-    font-family: 'Raleway', sans-serif;;
+    font-family: 'Raleway', sans-serif;
 }
 
 li, a {
@@ -55,6 +55,10 @@ li, a {
     display: none;
 }
 
+nav {
+    display: none;
+}
+
 header {
     height: 100%;
     background-color: #171B1F;
@@ -68,13 +72,13 @@ header {
 }
 
 .header-content {
-    padding: 40px;
+    padding: 45px;
 }
 
 .header-titulo {
     font-size: 4em;
     font-weight: 400;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
 }
 
 header p {
@@ -121,6 +125,7 @@ header p {
         height: 100%;
         width: 300px;
         background-color: #171B1F;
+        display: block;
         position: fixed;
         z-index: 3;
         color: white;
@@ -174,7 +179,6 @@ header p {
     }
 
     nav.ativo {
-        display: block;
         transform: translateX(300px);
     }
 
