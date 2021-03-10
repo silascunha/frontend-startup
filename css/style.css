@@ -50,7 +50,15 @@ h1, h2, h3, h4, h5, h6 {
 
 h3 {
     font-size: 24px;
-    margin: 15px 0;
+    margin: 10px 0;
+}
+
+p {
+    margin: 1em 0;
+}
+
+.texto-apagado {
+    opacity: 0.6;
 }
 
 /* barra de navegação */
@@ -136,6 +144,43 @@ header p {
     background-color: rgba(253, 253, 253, 0.9);
 }
 
+/* footer */ 
+
+footer {
+    background-color: #171B1F;
+    padding: 16px 8%;
+    color: white;
+}
+
+footer p {
+    margin-top: 1em;
+    margin-bottom: 8px;
+}
+
+a#btn-voltar {
+    display: inline-block;
+    color: black;
+    background-color: white;
+    padding: 10px 16px;
+    margin: 12px 0;
+}
+
+a#btn-voltar i {
+    margin-right: 16px;
+}
+
+.icones-link {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.icones-link a {
+    opacity: 0.6;
+}
+
+.icones-link a:hover {
+    opacity: 1;
+}
+
 /* seções da página */
 
 .container {
@@ -146,17 +191,23 @@ header p {
     background-color: #e0e2e2;
 }
 
+.grid-4col {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin: 0 8px;
+}
+
 .grid-2col {
     display: grid;
     grid-template-columns: repeat(2, 50%);
 }
 
-/* Área SOBRE */
-
-.container-sobre .subtitulo {
+.subtitulo {
     font-size: 1.2em;
     margin: 1em 0;
 }
+
+/* Área SOBRE */
 
 .center {
     text-align: center !important;
@@ -165,11 +216,6 @@ header p {
 .icones {
     font-size: 64px;
     margin-bottom: 20px;
-}
-
-.grid-4col {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
 }
 
 .box-conteudo {
@@ -220,19 +266,57 @@ header p {
 
 }
 
+/* Área EQUIPE */
+
+.card-equipe {
+    margin: 0 8px;
+    margin-bottom: 16px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card-equipe img {
+    width: 100%;
+}
+
+.card-equipe .conteudo {
+    margin: 0 16px;
+}
+
+.card-equipe p {
+    line-height: 1.8;
+}
+
+.card-equipe span {
+    margin: 16px 0;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 1.2em;
+    display: block;
+    text-align: center;
+    background-color: #dadada;
+}
+
+.card-equipe span:hover {
+    cursor: pointer;
+    background-color: #b9b9b9;
+}
+
 /* media queries */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 940px) {
     .grid-4col {
         grid-template-columns: repeat(2, 50%);
     }
 
-    .grid-2col {
-        grid-template-columns: repeat(1, 100%);
-    }
-
     .design-img {
         margin-top: 24px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .grid-2col {
+        grid-template-columns: repeat(1, 100%);
     }
 }
 
